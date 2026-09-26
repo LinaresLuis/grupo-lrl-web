@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Grupo LRL</title>
+
+  <!-- Icono de la pestaña del navegador -->
+  <link rel="icon" type="image/png" href="logo-grupolrl-icon.png">
 
   <style>
     * {
@@ -19,26 +23,52 @@
       color: #222;
     }
 
+    /* =========================
+       HEADER
+       ========================= */
+
     header {
       background: #ffffff;
-      padding: 22px 8%;
+      padding: 12px 7%;
       display: flex;
       justify-content: space-between;
       align-items: center;
       border-bottom: 1px solid #e5e5e5;
     }
 
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
     .logo img {
-    width: 230px;
-    height: auto;
-    display: block;
-}
+      width: 300px;
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+    }
 
     nav a {
-      margin-left: 25px;
+      margin-left: 28px;
       text-decoration: none;
-      color: #333;
+      color: #173d76;
+      font-size: 16px;
+      font-weight: 500;
+      transition: color 0.2s ease;
     }
+
+    nav a:hover {
+      color: #087cff;
+    }
+
+    /* =========================
+       HERO
+       ========================= */
 
     .hero {
       min-height: 70vh;
@@ -53,6 +83,7 @@
 
     .hero h1 {
       font-size: 48px;
+      color: #0c356c;
       margin-bottom: 15px;
     }
 
@@ -67,25 +98,77 @@
       display: inline-block;
       margin-top: 30px;
       padding: 14px 28px;
-      background: #222;
-      color: white;
+      background: #0c356c;
+      color: #ffffff;
       text-decoration: none;
       border-radius: 6px;
+      transition: background 0.2s ease;
     }
+
+    .button:hover {
+      background: #087cff;
+    }
+
+    /* =========================
+       FOOTER
+       ========================= */
 
     footer {
       text-align: center;
       padding: 25px;
       color: #777;
+      background: #f7f7f7;
     }
+
+    /* =========================
+       CELULAR / TABLET
+       ========================= */
+
+    @media (max-width: 768px) {
+
+      header {
+        flex-direction: column;
+        padding: 12px 20px 18px;
+      }
+
+      .logo img {
+        width: 260px;
+      }
+
+      nav {
+        margin-top: 5px;
+      }
+
+      nav a {
+        margin: 0 12px;
+        font-size: 15px;
+      }
+
+      .hero {
+        min-height: 65vh;
+        padding: 40px 25px;
+      }
+
+      .hero h1 {
+        font-size: 38px;
+      }
+
+      .hero p {
+        font-size: 18px;
+      }
+    }
+
   </style>
 </head>
 
 <body>
 
 <header>
+
   <div class="logo">
-    <img src="logo-grupo-lrl-2.PNG" alt="Grupo LRL">
+    <a href="#inicio">
+      <img src="logo-grupolrl-header.png" alt="Grupo LRL">
+    </a>
   </div>
 
   <nav>
@@ -93,7 +176,9 @@
     <a href="#nosotros">Nosotros</a>
     <a href="#contacto">Contacto</a>
   </nav>
+
 </header>
+
 
 <section class="hero" id="inicio">
 
@@ -111,9 +196,11 @@
 
 </section>
 
+
 <footer id="contacto">
   © 2026 Grupo LRL. Todos los derechos reservados.
 </footer>
 
 </body>
+
 </html>
