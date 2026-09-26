@@ -17,6 +17,10 @@
       padding: 0;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: Arial, Helvetica, sans-serif;
       background: #f7f7f7;
@@ -110,14 +114,91 @@
     }
 
     /* =========================
+       NUESTRAS MARCAS
+       ========================= */
+
+    .marcas {
+      padding: 70px 7%;
+      text-align: center;
+      background: #f7f7f7;
+    }
+
+    .marcas h2 {
+      font-size: 36px;
+      color: #0c356c;
+      margin-bottom: 10px;
+    }
+
+    .marcas-intro {
+      font-size: 18px;
+      color: #666;
+      margin-bottom: 40px;
+    }
+
+    .marcas-contenedor {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      gap: 35px;
+    }
+
+    .marca-card {
+      flex: 1;
+      max-width: 450px;
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 25px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .marca-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    }
+
+    .marca-logo {
+      width: 100%;
+      height: 330px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .marca-logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+
+    .marca-card h3 {
+      font-size: 22px;
+      color: #173d76;
+      margin-bottom: 8px;
+    }
+
+    .marca-card p {
+      font-size: 16px;
+      color: #666;
+      line-height: 1.5;
+    }
+
+    /* =========================
        FOOTER
        ========================= */
 
     footer {
       text-align: center;
-      padding: 25px;
+      padding: 30px 25px;
       color: #777;
-      background: #f7f7f7;
+      background: #ffffff;
+      border-top: 1px solid #e5e5e5;
     }
 
     /* =========================
@@ -156,6 +237,38 @@
       .hero p {
         font-size: 18px;
       }
+
+      .marcas {
+        padding: 50px 20px;
+      }
+
+      .marcas h2 {
+        font-size: 30px;
+      }
+
+      .marcas-intro {
+        font-size: 17px;
+        margin-bottom: 30px;
+      }
+
+      .marcas-contenedor {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+      }
+
+      .marca-card {
+        width: 100%;
+        max-width: 420px;
+      }
+
+      .marca-logo {
+        height: auto;
+      }
+
+      .marca-logo img {
+        height: auto;
+      }
     }
 
   </style>
@@ -193,6 +306,60 @@
   <a class="button" href="#contacto">
     Contáctanos
   </a>
+
+</section>
+
+
+<!-- =========================
+     NUESTRAS MARCAS
+     ========================= -->
+
+<section class="marcas" id="nosotros">
+
+  <h2>Nuestras marcas</h2>
+
+  <p class="marcas-intro">
+    Conoce los proyectos que forman parte de Grupo LRL.
+  </p>
+
+  <div class="marcas-contenedor">
+
+    <!-- José Roberto Fotografía -->
+    <div class="marca-card">
+
+      <div class="marca-logo">
+        <img
+          src="logo-roberto-fotografia.png"
+          alt="José Roberto Fotografía">
+      </div>
+
+      <h3>José Roberto Fotografía</h3>
+
+      <p>
+        Fotografía y producción visual.
+      </p>
+
+    </div>
+
+
+    <!-- Lili Reyes -->
+    <div class="marca-card">
+
+      <div class="marca-logo">
+        <img
+          src="logo-lily-reyes.png"
+          alt="Lili Reyes">
+      </div>
+
+      <h3>Lili Reyes</h3>
+
+      <p>
+        Sabores, detalles y estilo.
+      </p>
+
+    </div>
+
+  </div>
 
 </section>
 
